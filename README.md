@@ -28,7 +28,7 @@ Reference:
 -[Deep Learning nn model hyper parameter optimization through Rutgers HPC](trav/amarel/nn_param_opt)                    
             
 
-## Exercise 1: Spotify genre classification using random forest.
+## Exercise : Spotify genre classification using random forest.
   1. Remove duplicated rows, columns with high-entropy features.
   2. Missing values: use mean for continous and mode for categorical features.
   3. Box cox (postive data only) or yeojohnson transformation to make features more normal.
@@ -39,7 +39,7 @@ Reference:
  -[Note Link](cl20813_SPOTIFY_GENRE.ipynb)
 
 
-## Exercise 2. NLP with Python: Spam detection.
+## Exercise . NLP with Python: Spam detection.
 
   1. Read a text-based dataset into pandas: If I have a raw data, I would have to remove redundant columns other than 'label', and 'message'.
   2. Text pre processing: 1) Remove common words, ('the','a', etc...) by using NLTK library. 2) Remove punctuation (!@#$%).
