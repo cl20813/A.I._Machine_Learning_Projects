@@ -1,6 +1,10 @@
 # DS-projects
 
- -[Make New Environment in Rutgers Amarel HPC ](set_environment)
+-[Make and share environment](install_python.md)
+
+-[Create an environment on Rutgers Amarel](amarel_environment.md)
+
+-[Install mypackage on Amarel](install_mypackage_amarel.md)
 
 ## Exercise : Travelers Insurance Conversion Modeling (Update Dec.2024)
 The goal of the project is to predict the probability that a prospect consumer will choose Travelers as their insurer.
