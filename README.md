@@ -21,12 +21,12 @@ Tabnet showed good AUC score but it performed very poorly on predicting actual l
 
 The final modeling result is shwon below.                  
 -[Final model: LightGBM jupyter notebook](trav/travelers_lightgbm.ipynb)                             
--[LightGBM hyper parameter optimization through Rutgers HPC](trav/amarel/lightgbm_param_opt.txt)               
-
--[Reference: Neural Network (CNN) and Tabnet](trav/trav_neural_network.ipynb)                     
+              
+Reference: 
+-[LightGBM hyper parameter optimization through Rutgers HPC](trav/amarel/lightgbm_param_opt.txt) 
+-[Neural Network (CNN) and Tabnet](trav/trav_neural_network.ipynb)                     
 -[Deep Learning nn model hyper parameter optimization through Rutgers HPC](trav/amarel/nn_param_opt)                    
             
-
 
 ## Exercise 1: Spotify genre classification using random forest.
   1. Remove duplicated rows, columns with high-entropy features.
