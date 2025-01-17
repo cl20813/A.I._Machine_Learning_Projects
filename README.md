@@ -1,4 +1,4 @@
-# Data analytics projects
+# Settings
 
 -[Make and share environment](https://github.com/cl20813/Softwares_Setup/blob/main/install_python.md)        
 
