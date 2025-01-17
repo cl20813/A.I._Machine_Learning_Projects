@@ -1,6 +1,6 @@
 # Data analytics projects
 
--[Make and share environment](install_python.md)
+-[Make and share environment](install_python.md)  
 
 -[Create an environment on Rutgers Amarel](amarel_environment.md)
 
