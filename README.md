@@ -4,7 +4,7 @@
 
 -[Create an environment on Rutgers Amarel](amarel_environment.md)
             
--[Install mypackage on Amarel]([install_mypackage_amarel.md](https://github.com/cl20813/Softwares_Setup/blob/main/install_python.md))      
+-[Install mypackage on Amarel](https://github.com/cl20813/Softwares_Setup/blob/main/install_python.md)      
 
 ## Exercise : Travelers Insurance Conversion Modeling (Update Dec.2024)
 The goal of the project is to predict the probability that a prospect consumer will choose Travelers as their insurer.
