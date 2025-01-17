@@ -20,7 +20,7 @@ Tabnet showed good AUC score but it performed very poorly on predicting actual l
 5. Re-tune the hyperparameters.
 
 The final modeling result is shwon below.                  
--[Final model*: LightGBM jupyter notebook](trav/travelers_lightgbm.ipynb)                             
+-[Final model: LightGBM jupyter notebook*](trav/travelers_lightgbm.ipynb)                             
               
 Reference: 
 -[LightGBM hyper parameter optimization through Rutgers HPC](trav/amarel/lightgbm_param_opt.txt)                 
