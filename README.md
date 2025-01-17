@@ -1,4 +1,4 @@
-# DS-projects
+# Data analytics projects
 
 -[Make and share environment](install_python.md)
 
