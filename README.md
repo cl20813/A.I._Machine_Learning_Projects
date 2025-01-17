@@ -14,18 +14,18 @@ Last AUC score for probability prediction is 0.8015 and recall for convertors (c
 Tabnet showed good AUC score but it performed very poorly on predicting actual labels. Another observation is that, CNN is good for spatial, sequential data and not a good tool for analyzing tabular, well structured data.
 
 1. Perform base modeling to compare basic models: CNN, LightGBM, and linear models.
-2. Conduct feature engineering. -[Feature Engineering](trav/data_engineering_lightgbm.ipynb)  
+2. Conduct feature engineering. -[Feature Engineering*](trav/data_engineering_lightgbm.ipynb)  
 3. Optimize hyperparameters using Rutgers HPC computing resources.   
 4. Refine feature engineering.  
 5. Re-tune the hyperparameters.
 
 The final modeling result is shwon below.                  
--[Final model: LightGBM jupyter notebook](trav/travelers_lightgbm.ipynb)                             
+-[Final model*: LightGBM jupyter notebook](trav/travelers_lightgbm.ipynb)                             
               
 Reference: 
--[LightGBM hyper parameter optimization through Rutgers HPC](trav/amarel/lightgbm_param_opt.txt) 
--[Neural Network (CNN) and Tabnet](trav/trav_neural_network.ipynb)                     
--[Deep Learning nn model hyper parameter optimization through Rutgers HPC](trav/amarel/nn_param_opt)                    
+-[LightGBM hyper parameter optimization through Rutgers HPC](trav/amarel/lightgbm_param_opt.txt)                 
+-[Neural Network (CNN) and Tabnet](trav/trav_neural_network.ipynb)                                  
+-[Deep Learning nn model hyper parameter optimization through Rutgers HPC](trav/amarel/nn_param_opt)                            
             
 
 ## Exercise : Spotify genre classification using random forest.
