@@ -1,4 +1,4 @@
-## Spatio-Temporal Modeling of Ozone Data Using a Deep Learning Framework (CNN-LSTM) (Updated January 2025)
+## Spatio-Temporal Modeling of Ozone Data Using a Deep Learning Framework (CNN-LSTM) (Ongoing proejct, updated January 2025)
 #### Research Proposal and Exploratory Data Analysis
 -[Research Proposal](https://github.com/cl20813/GEMS_TCO/blob/main/GEMS_TCO_EDA/Spatio_temporal_modeling.pdf): The main goal of the project is to develop tools that can help in modeling the spatio-temporal Ozone process.
 
