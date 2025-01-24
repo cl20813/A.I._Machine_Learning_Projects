@@ -43,7 +43,7 @@ Reference:
   3. Box cox (postive data only) or yeojohnson transformation to make features more normal.
   4. Remove extreme values or outliers.
   5. Split data into train and test.
-  6. Random forest, lowest auc score is 92 for 5 labels in genre.
+  6. Random forest, lowest auc score is 0.92 for 5 labels in genre.
 
  -[Note Link](cl20813_SPOTIFY_GENRE.ipynb)
 
