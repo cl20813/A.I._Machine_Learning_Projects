@@ -31,6 +31,6 @@ In round 3, ```VOLCANIC_ROCK_VOUCHER``` are call options at different strike pri
 C = S.N(d1) - K* exp(-r*T)*N(d2), where
 d2 = d1 - $\sigma \sqrt{T}$  
 d1 = $\frac{dd}{d}$
-d1 = $\frac{\log{S/K} + $(r+ \sigma^2/2)*T}{\sigma* \sqrt{T}}$
+d1 = $\frac{ \log{S/K} + $(r+ \sigma^2/2)*T }{ \sigma * \sqrt{T} }$
 
 
