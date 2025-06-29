@@ -1,7 +1,3 @@
-
-[What are Market Makers](marketmaker.md)
-
-
 ## Set up
 
 [jmerle][https://github.com/jmerle/imc-prosperity-3-backtester]
@@ -15,10 +11,10 @@ Go to terminal and type belows:
 
 ```pip install -e .```
 
-For reference,
+For reference,    
 ```which prosperity3bt```   returns ```/opt/anaconda3/envs/faiss_env/bin/prosperity3bt(root of run file)```    
-Package folder is located at  ```/Users/joonwonlee/imc-prosperity-3-backtester```. (cmd+shit+c and cmd+shit+.(period) to reveal folders)   
-prosperity3bt-0.0.0.dist-info (meta data helps upgrade or reinstallation.)   
+But the package folder is located at  ```/Users/joonwonlee/imc-prosperity-3-backtester```. (cmd+shit+c and cmd+shit+.(period) to reveal folders in mac)   
+Also prosperity3bt-0.0.0.dist-info is a meta data that helps upgrade or reinstallation.   
 
 
 
