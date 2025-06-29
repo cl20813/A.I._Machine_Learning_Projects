@@ -17,6 +17,19 @@ But the package folder is located at  ```/Users/joonwonlee/imc-prosperity-3-back
 Also prosperity3bt-0.0.0.dist-info is a meta data that helps upgrade or reinstallation.   
 
 ### Run example
-```prosperity3bt /Users/joonwonlee/Documents/imc_trading/round3/test0629.py 3```
+```prosperity3bt /Users/joonwonlee/Documents/imc_trading/round3/test0629.py 3```       #round 3 all days
+```prosperity3bt /Users/joonwonlee/Documents/imc_trading/round3/test0629.py 3-0```     #round 3 day 1
+
+
+# Implied Volatility
+Grid search for the range between (0.0001, 5.0)
+Compute Black-Scholes price using the value above.
+Compare Black-Scholes model price to the market price (option price) until two prices are close enough.
+
+In round 3, ```VOLCANIC_ROCK_VOUCHER``` are call options at different strike prices. So we use Black-Scholes model for call option,
+
+C = S.N(d1) - K* exp(-r*T)*N(d2), where
+d2 = d1 - $\sigma \sqrt{T}$  
+d1 = $\frac{\log{S/K} + (r+ \sigma^2/2)*T}{\sigma* \sqrt{T}}$
 
 
