@@ -36,11 +36,15 @@ d1 = $\frac{ \log(S/K) + (r+ \sigma^2/2)*T }{ \sigma * \sqrt{T} },$
 S = spot asset price, K = Strike price, r is interest. 
 
 ## Reference
-Black Scholes model is to compute individual price of a call or put option, but by using put-call parity formula, we can compute the put option price as well assuming there is no arbitrage pricing (guarantee a profit witout risk).
+Black Scholes model is to compute individual price of a call or put option, but by using put-call parity formula, we can compute the put option price as well assuming there is no arbitrage pricing (guarantee a profit witout risk). But for reference, Black-Scholes model for put option is
+P = K * exp(-r * T) * N(d2) - S * N(-d1), and
 
-Put-call parity:
-$$
-C + PV(K) = P + S, where PV is the present value of strike price K.
-$$
+Put-call parity:  
+C + PV(K) = P + S  
+where PV(K) is the present value of the strike price K.
+
+For example, if C=5, PV=100, P=7, S=98, then 
+$5+100 \neq 7+98$
+
 
 
