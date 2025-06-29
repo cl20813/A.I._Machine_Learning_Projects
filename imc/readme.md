@@ -34,6 +34,8 @@ In round 3, ```VOLCANIC_ROCK_VOUCHER``` are call options at different strike pri
 where ```d2 = d1 - $\sigma \sqrt{T},$``` and ```d1 = $\frac{ \log(S/K) + (r+ \sigma^2/2)*T }{ \sigma * \sqrt{T} },$```   
 ```S = spot asset price, K = Strike price, r is interest```.    
 
+Note that d1 measures how far in-the-money (profitable to exercise money) the option is, but also adjusts for explains volatility.  The d2 represents risk-neutral probability that the option will be exercised.
+
 ## Reference
 Black Scholes model is to compute individual price of a call or put option, but by using put-call parity formula, we can compute the put option price as well assuming there is no arbitrage pricing (guarantee a profit witout risk). But for reference, Black-Scholes model for put option is
 , and
