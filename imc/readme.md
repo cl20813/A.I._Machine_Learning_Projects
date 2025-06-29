@@ -16,5 +16,7 @@ For reference,
 But the package folder is located at  ```/Users/joonwonlee/imc-prosperity-3-backtester```. (cmd+shit+c and cmd+shit+.(period) to reveal folders in mac)   
 Also prosperity3bt-0.0.0.dist-info is a meta data that helps upgrade or reinstallation.   
 
+### Run example
+```prosperity3bt /Users/joonwonlee/Documents/imc_trading/round3/test0629.py 3```
 
 
