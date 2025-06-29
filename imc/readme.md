@@ -39,8 +39,8 @@ S = spot asset price, K = Strike price, r is interest.
 Black Scholes model is to compute individual price of a call or put option, but by using put-call parity formula, we can compute the put option price as well assuming there is no arbitrage pricing (guarantee a profit witout risk).
 
 Put-call parity:
-\[
+$$
 C + PV(K) = P + S, where PV is the present value of strike price K.
-\]
+$$
 
 
