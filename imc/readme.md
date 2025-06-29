@@ -8,12 +8,12 @@
 
 Go to terminal and type belows:
 
-git clone https://github.com/jmerle/imc-prosperity-3-backtester.git
+```git clone https://github.com/jmerle/imc-prosperity-3-backtester.git```
 (it clones the repository into a new folder named imc-prosperity-3-backtester in your current working directory.)
 
-cd imc-prosperity-3-backtester
+```cd imc-prosperity-3-backtester```
 
-pip install -e .
+```pip install -e .```
 
 For reference,
 ```which prosperity3bt```   returns ```/opt/anaconda3/envs/faiss_env/bin/prosperity3bt(root of run file)```    
