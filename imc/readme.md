@@ -29,8 +29,18 @@ Compare Black-Scholes model price to the market price (option price) until two p
 In round 3, ```VOLCANIC_ROCK_VOUCHER``` are call options at different strike prices. So we use Black-Scholes model for call option,
 
 C = S.N(d1) - K* exp(-r*T)*N(d2), where
-d2 = d1 - $\sigma \sqrt{T}$  
 
-d1 = $\frac{ \log(S/K) + (r+ \sigma^2/2)*T }{ \sigma * \sqrt{T} }$
+d2 = d1 - $\sigma \sqrt{T}$     
+d1 = $\frac{ \log(S/K) + (r+ \sigma^2/2)*T }{ \sigma * \sqrt{T} },$
+
+S = spot asset price, K = Strike price, r is interest. 
+
+## Reference
+Black Scholes model is to compute individual price of a call or put option, but by using put-call parity formula, we can compute the put option price as well assuming there is no arbitrage pricing (guarantee a profit witout risk).
+
+Put-call parity:
+\[
+C + PV(K) = P + S, where PV is the present value of strike price K.
+\]
 
 
