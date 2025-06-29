@@ -37,34 +37,33 @@ where ```d2 = d1 - $\sigma \sqrt{T},$``` and ```d1 = $\frac{ \log(S/K) + (r+ \si
 ## Reference
 Black Scholes model is to compute individual price of a call or put option, but by using put-call parity formula, we can compute the put option price as well assuming there is no arbitrage pricing (guarantee a profit witout risk). But for reference, Black-Scholes model for put option is
 , and
+  
+Put-call parity:     
+C + PV(K) = P + S     
+where PV(K) is the present value of the strike price K.   
+  
+For example, if C=3, PV=100, P=7, S=98, then    
+$5+100 \neq 7+98$, this means either call option price is too low or put option price is too high. If we started by setting C from Black-scholes model and assume it is correctly modeled, then put option price is the one too high. Then we can exploit the price by belows:   
+    
+Sell the overprice put 7   
+Buy the call option at 3   
+Short stocks at 98 (borrow shares of a stock and sell immediately with intention of buying them back at lower price later and return to lender.)   
+Invest in a bond (PV of strike) -$100 (from 98, invest it in a risk-free bond that will grow to exactly at the option's expiration date.)  
+then you will have +7 -3 +98 - 100 = 2.   
+  
+Two cases:      
+Stock price > K      
+Call is exercised: you buy stock at K   (You have K from the the expired Bond)   
+Deliver stock to cover your short       (Return the stock to the lender)   
+Put expires worthless        
 
-Put-call parity:  
-C + PV(K) = P + S  
-where PV(K) is the present value of the strike price K.
+Stock price < K       
+Put is exercised: you buy stock at K    (You sold the put option, and the buyer will exercise the put, and you are obligated to buy the stock at k)       
+Use bond proceeds to pay K              (You have K from the the expired Bond)    
+Deliver stock to cover your short       (Return the stock to the lender)   
+Call expires worthless      
 
-For example, if C=3, PV=100, P=7, S=98, then 
-$5+100 \neq 7+98$, this means either call option price is too low or put option price is too high. If we started by setting C from Black-scholes model and assume it is correctly modeled, then put option price is the one too high. Then we can exploit the price by belows:
-
-Sell the overprice put 7
-Buy the call option at 3
-Short stocks at 98 (borrow shares of a stock and sell immediately with intention of buying them back at lower price later and return to lender.)
-Invest in a bond (PV of strike) -$100 (from 98, invest it in a risk-free bond that will grow to exactly at the option's expiration date.)
-then you will have +7 -3 +98 - 100 = 2.
-
-Two cases:
-Stock price > K
-Call is exercised: you buy stock at K
-Use bond proceeds to pay K
-Deliver stock to cover your short
-Put expires worthless
-
-Stock price < K
-Put is exercised: you buy stock at K (the buyer will exercise the put, and you are obligated to buy the stock at k)
-Use bond proceeds to pay K
-Deliver stock to cover your short
-Call expires worthless
-
-In both scenarios, you have $2 at the end.
+In both scenarios, you have $2 at the end.       
 
 
 
