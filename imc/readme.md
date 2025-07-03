@@ -2,19 +2,27 @@
 
 [jmerle][https://github.com/jmerle/imc-prosperity-3-backtester]
 
-Go to terminal and type belows:
+## ⚙️ Setup
 
-```git clone https://github.com/jmerle/imc-prosperity-3-backtester.git```
-(it clones the repository into a new folder named imc-prosperity-3-backtester in your current working directory.)
+To get started, I will use the package from below. Open your terminal and run the following commands:
 
-```cd imc-prosperity-3-backtester```
+```bash
+git clone https://github.com/jmerle/imc-prosperity-3-backtester.git
+cd imc-prosperity-3-backtester
+pip install -e .
 
-```pip install -e .```
+### 📁 Additional Notes
+
+To verify the installed path of the CLI tool, run:
+
+```bash
+which prosperity3bt
+
 
 For reference,    
 ```which prosperity3bt```   returns ```/opt/anaconda3/envs/faiss_env/bin/prosperity3bt(root of run file)```    
-But the package folder is located at  ```/Users/joonwonlee/imc-prosperity-3-backtester```. (cmd+shit+c and cmd+shit+.(period) to reveal folders in mac)   
-Also prosperity3bt-0.0.0.dist-info is a meta data that helps upgrade or reinstallation.   
+The actual package source code may be located at: ```/Users/joonwonlee/imc-prosperity-3-backtester```. (cmd+shit+c and cmd+shit+.(period) to reveal folders in mac)   
+  
 
 ### Run example
 ```prosperity3bt /Users/joonwonlee/Documents/imc_trading/round3/test0629.py 3```       #round 3 all days
