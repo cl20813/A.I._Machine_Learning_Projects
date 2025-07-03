@@ -102,9 +102,9 @@ Suppose:
 
 Then:
 
-\[
+$$
 3 + 100 \neq 7 + 98 \Rightarrow 103 \neq 105
-\]
+$$
 
 This indicates a mispricing. If we assume the **call price is correct** (based on the Black-Scholes model), then the **put is overpriced**. We can exploit this arbitrage opportunity as follows:
 
