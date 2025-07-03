@@ -7,6 +7,7 @@ To get started, I will use the package from below. Open your terminal and run th
 git clone https://github.com/jmerle/imc-prosperity-3-backtester.git
 cd imc-prosperity-3-backtester
 pip install -e .
+```
 
 ### 📁 Additional Notes
 
@@ -14,7 +15,7 @@ To verify the installed path of the CLI tool, run:
 
 ```bash
 which prosperity3bt
-
+```
 
 For reference,    
 ```which prosperity3bt```   returns ```/opt/anaconda3/envs/faiss_env/bin/prosperity3bt(root of run file)```    
