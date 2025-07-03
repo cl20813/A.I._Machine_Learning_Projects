@@ -12,6 +12,7 @@ pip install -e .
 ## 🪨 Round 1 and 2: MARKET MAKING STRATEGY
 
 07/02 Make a link for market making strategy and black sholes model, implied volatility, and then upload screenshot of my rank.
+Then explain market making strategy in this page.
    
 ## 🪨 Round 3: Black-Scholes Model, and Implied Volatility.
 
