@@ -9,39 +9,10 @@ cd imc-prosperity-3-backtester
 pip install -e .
 ```
 
-### 📁 Additional Notes
+## 🪨 Round 1 and 2: MARKET MAKING STRATEGY
 
-To verify the installed path of the CLI tool, run:
+   
 
-```bash
-which prosperity3bt
-```
-
-For reference,    
-```which prosperity3bt```   returns ```/opt/anaconda3/envs/faiss_env/bin/prosperity3bt(root of run file)```    
-The actual package source code may be located at: ```/Users/joonwonlee/imc-prosperity-3-backtester```. (cmd+shit+c and cmd+shit+.(period) to reveal folders in mac)   
-  
-
-### Run example
-```prosperity3bt /Users/joonwonlee/Documents/imc_trading/round3/test0629.py 3```          # round 3 all days     
-```prosperity3bt /Users/joonwonlee/Documents/imc_trading/round3/test0629.py 3-0```        # round 3 day 1      
-    
-
-## 📈 Implied Volatility and the Black-Scholes Model
-
-In real markets, we observe the **option price** (e.g., the price of a voucher), but we do **not** observe volatility directly. To estimate volatility, we **invert the Black-Scholes formula** to find the value of **σ (sigma)** that makes the model price match the market price. This estimated volatility is known as **implied volatility**.
-
----
-
-## 🔍 Grid Search for Implied Volatility
-
-We perform a **grid search** over a range of volatility values (e.g., from `0.0001` to `5.0`). For each candidate volatility:
-
-1. Compute the **Black-Scholes price** using the current volatility.
-2. Compare the model price to the **observed market price**.
-3. Repeat until the model price is sufficiently close to the market price.
-
----
 
 ## 🪨 Round 3: VOLCANIC_ROCK_VOUCHER Options
 
@@ -59,6 +30,22 @@ Where:
 
 - $$d_1 = \frac{\log(S/K) + (r + \sigma^2 / 2) \cdot T}{\sigma \cdot \sqrt{T}}$$  
 - $$d_2 = d_1 - \sigma \cdot \sqrt{T}$$
+
+## 📈 Implied Volatility and the Black-Scholes Model
+
+In real markets, we observe the **option price** (e.g., the price of a voucher), but we do **not** observe volatility directly. To estimate volatility, we **invert the Black-Scholes formula** to find the value of **σ (sigma)** that makes the model price match the market price. This estimated volatility is known as **implied volatility**.
+
+---
+
+## 🔍 Grid Search for Implied Volatility
+
+We perform a **grid search** over a range of volatility values (e.g., from `0.0001` to `5.0`). For each candidate volatility:
+
+1. Compute the **Black-Scholes price** using the current volatility.
+2. Compare the model price to the **observed market price**.
+3. Repeat until the model price is sufficiently close to the market price.
+
+---
 
 ---
 
@@ -150,7 +137,22 @@ This indicates a mispricing. If we assume the **call price is correct** (based o
 In both scenarios, the arbitrage strategy yields a **risk-free profit of \$2**, demonstrating the power of **put-call parity** in identifying mispriced options.
   
 
+### 📁 Additional Notes
 
+To verify the installed path of the CLI tool, run:
+
+```bash
+which prosperity3bt
+```
+
+For reference,    
+```which prosperity3bt```   returns ```/opt/anaconda3/envs/faiss_env/bin/prosperity3bt(root of run file)```    
+The actual package source code may be located at: ```/Users/joonwonlee/imc-prosperity-3-backtester```. (cmd+shit+c and cmd+shit+.(period) to reveal folders in mac)   
+  
+
+### Run example
+```prosperity3bt /Users/joonwonlee/Documents/imc_trading/round3/test0629.py 3```          # round 3 all days     
+```prosperity3bt /Users/joonwonlee/Documents/imc_trading/round3/test0629.py 3-0```        # round 3 day 1   
 
 
 
