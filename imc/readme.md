@@ -74,57 +74,75 @@ Where:
 
 
 
-# Implied Volatility
+## 📚 Reference
 
-In real markets, we observe the option price (e.g., the voucher price).
-We don’t observe volatility directly.
-So we invert the Black-Scholes formula to find the volatility (σ or "sigma") that makes the model price match the market price.
-This is called implied volatility.
+The **Black-Scholes model** is used to compute the theoretical price of individual **call** or **put** options. However, using the **put-call parity** formula, we can derive the price of a put option from a call option (or vice versa), assuming **no arbitrage** (i.e., no risk-free profit opportunities).
 
-Grid search for the range between (0.0001, 5.0)
-Compute Black-Scholes price using the value above.
-Compare Black-Scholes model price to the market price (option price) until two prices are close enough.
+### 🧮 Put-Call Parity:
 
-In round 3, ```VOLCANIC_ROCK_VOUCHER``` are call options at different strike prices. So we use Black-Scholes model for call option, note that   
+\[
+C + PV(K) = P + S
+\]
 
-```C = S.N(d1) - K* exp(-r*T)*N(d2)```   
-```P = K * exp(-r * T) * N(d2) - S * N(-d1)```,   
+Where:
+- **C** = Call option price  
+- **P** = Put option price  
+- **S** = Spot price of the underlying asset  
+- **PV(K)** = Present value of the strike price **K**, discounted at the risk-free rate
 
-where ```d2 = d1 - $\sigma \sqrt{T},$``` and ```d1 = $\frac{ \log(S/K) + (r+ \sigma^2/2)*T }{ \sigma * \sqrt{T} },$```   
-```S = spot asset price, K = Strike price, r is interest```.    
+---
 
-Note that d1 measures how far in-the-money (profitable to exercise money) the option is, but also adjusts for explains volatility.  The d2 represents risk-neutral probability that the option will be exercised.
+### 🧪 Example:
 
-## Reference
-Black Scholes model is to compute individual price of a call or put option, but by using put-call parity formula, we can compute the put option price as well assuming there is no arbitrage pricing (guarantee a profit witout risk). But for reference, Black-Scholes model for put option is
-, and
+Suppose:
+- Call price \( C = 3 \)
+- Present value of strike \( PV(K) = 100 \)
+- Put price \( P = 7 \)
+- Spot price \( S = 98 \)
+
+Then:
+
+\[
+3 + 100 \neq 7 + 98 \Rightarrow 103 \neq 105
+\]
+
+This indicates a mispricing. If we assume the **call price is correct** (based on the Black-Scholes model), then the **put is overpriced**. We can exploit this arbitrage opportunity as follows:
+
+---
+
+### 💼 Arbitrage Strategy:
+
+1. **Sell** the overpriced put at \$7  
+2. **Buy** the call at \$3  
+3. **Short** the stock at \$98  
+4. **Invest** \$100 in a risk-free bond (to receive \$K at expiration)
+
+**Net cash flow today:**
+\[
++7 - 3 + 98 - 100 = +2
+\]
+
+---
+
+### 📊 Outcomes at Expiration:
+
+#### Case 1: Stock price **> K**
+- Call is exercised: Buy stock at **K** using bond proceeds
+- Cover short position by delivering the stock
+- Put expires worthless
+- **Profit = \$2**
+
+#### Case 2: Stock price **< K**
+- Put is exercised: Buy stock at **K** (obligation from sold put)
+- Use bond proceeds to pay **K**
+- Cover short position by delivering the stock
+- Call expires worthless
+- **Profit = \$2**
+
+---
+
+In both scenarios, the arbitrage strategy yields a **risk-free profit of \$2**, demonstrating the power of **put-call parity** in identifying mispriced options.
   
-Put-call parity:     
-C + PV(K) = P + S     
-where PV(K) is the present value of the strike price K.   
-  
-For example, if C=3, PV=100, P=7, S=98, then    
-$5+100 \neq 7+98$, this means either call option price is too low or put option price is too high. If we started by setting C from Black-scholes model and assume it is correctly modeled, then put option price is the one too high. Then we can exploit the price by belows:   
-    
-Sell the overprice put 7   
-Buy the call option at 3   
-Short stocks at 98 (borrow shares of a stock and sell immediately with intention of buying them back at lower price later and return to lender.)   
-Invest in a bond (PV of strike) -$100 (from 98, invest it in a risk-free bond that will grow to exactly at the option's expiration date.)  
-then you will have +7 -3 +98 - 100 = 2.   
-  
-Two cases:      
-Stock price > K      
-Call is exercised: you buy stock at K   (You have K from the the expired Bond)   
-Deliver stock to cover your short       (Return the stock to the lender)   
-Put expires worthless        
-
-Stock price < K       
-Put is exercised: you buy stock at K    (You sold the put option, and the buyer will exercise the put, and you are obligated to buy the stock at k)       
-Use bond proceeds to pay K              (You have K from the the expired Bond)    
-Deliver stock to cover your short       (Return the stock to the lender)   
-Call expires worthless      
-
-In both scenarios, you have $2 at the end.       
 
 
 
