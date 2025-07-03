@@ -22,6 +22,12 @@ Also prosperity3bt-0.0.0.dist-info is a meta data that helps upgrade or reinstal
 
 
 # Implied Volatility
+
+In real markets, we observe the option price (e.g., the voucher price).
+We don’t observe volatility directly.
+So we invert the Black-Scholes formula to find the volatility (σ or "sigma") that makes the model price match the market price.
+This is called implied volatility.
+
 Grid search for the range between (0.0001, 5.0)
 Compute Black-Scholes price using the value above.
 Compare Black-Scholes model price to the market price (option price) until two prices are close enough.
