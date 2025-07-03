@@ -13,6 +13,8 @@ pip install -e .
 
 07/02 Make a link for market making strategy and black sholes model, implied volatility, and then upload screenshot of my rank.
 Then explain market making strategy in this page.
+
+Conclusion, market making strategy worked better maybe because BS model assumes constant volatility. 
    
 ## 🪨 Round 3: Black-Scholes Model, and Implied Volatility.
 
