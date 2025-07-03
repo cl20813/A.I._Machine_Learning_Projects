@@ -21,6 +21,59 @@ Also prosperity3bt-0.0.0.dist-info is a meta data that helps upgrade or reinstal
 ```prosperity3bt /Users/joonwonlee/Documents/imc_trading/round3/test0629.py 3-0```     #round 3 day 1
 
 
+## 📈 Implied Volatility and the Black-Scholes Model
+
+In real markets, we observe the **option price** (e.g., the price of a voucher), but we do **not** observe volatility directly. To estimate volatility, we **invert the Black-Scholes formula** to find the value of **σ (sigma)** that makes the model price match the market price. This estimated volatility is known as **implied volatility**.
+
+---
+
+## 🔍 Grid Search for Implied Volatility
+
+We perform a **grid search** over a range of volatility values (e.g., from `0.0001` to `5.0`). For each candidate volatility:
+
+1. Compute the **Black-Scholes price** using the current volatility.
+2. Compare the model price to the **observed market price**.
+3. Repeat until the model price is sufficiently close to the market price.
+
+---
+
+## 🪨 Round 3: VOLCANIC_ROCK_VOUCHER Options
+
+In Round 3, `VOLCANIC_ROCK_VOUCHER` represents **call options** with various strike prices. We use the **Black-Scholes formula for call options**:
+
+### Black-Scholes Formulas:
+
+- **Call Option (C):**  
+  $$C = S \cdot N(d_1) - K \cdot e^{-rT} \cdot N(d_2)$$
+
+- **Put Option (P):**  
+  $$P = K \cdot e^{-rT} \cdot N(-d_2) - S \cdot N(-d_1)$$
+
+Where:
+
+- $$d_1 = \frac{\log(S/K) + (r + \sigma^2 / 2) \cdot T}{\sigma \cdot \sqrt{T}}$$  
+- $$d_2 = d_1 - \sigma \cdot \sqrt{T}$$
+
+---
+
+## 📘 Definitions:
+
+- **S** = Spot price of the underlying asset  
+- **K** = Strike price  
+- **r** = Risk-free interest rate  
+- **T** = Time to maturity (in years)  
+- **σ** = Volatility (standard deviation of returns)  
+- **N(·)** = Cumulative distribution function of the standard normal distribution
+
+---
+
+## 🧠 Intuition:
+
+- **d₁** measures how far **in-the-money** the option is, adjusted for volatility and time.
+- **d₂** represents the **risk-neutral probability** that the option will be exercised.
+
+
+
 # Implied Volatility
 
 In real markets, we observe the option price (e.g., the voucher price).
