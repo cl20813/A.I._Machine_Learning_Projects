@@ -13,8 +13,7 @@ pip install -e .
 
    
 
-
-## 🪨 Round 3: VOLCANIC_ROCK_VOUCHER Options
+## 🪨 Round 3: Black-Scholes Model, and Implied Volatility.
 
 In Round 3, `VOLCANIC_ROCK_VOUCHER` represents **call options** with various strike prices. We use the **Black-Scholes formula for call options**:
 
