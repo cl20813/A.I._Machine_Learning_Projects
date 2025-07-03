@@ -23,9 +23,9 @@ The actual package source code may be located at: ```/Users/joonwonlee/imc-prosp
   
 
 ### Run example
-```prosperity3bt /Users/joonwonlee/Documents/imc_trading/round3/test0629.py 3```       #round 3 all days
-```prosperity3bt /Users/joonwonlee/Documents/imc_trading/round3/test0629.py 3-0```     #round 3 day 1
-
+```prosperity3bt /Users/joonwonlee/Documents/imc_trading/round3/test0629.py 3```          # round 3 all days     
+```prosperity3bt /Users/joonwonlee/Documents/imc_trading/round3/test0629.py 3-0```        # round 3 day 1      
+    
 
 ## 📈 Implied Volatility and the Black-Scholes Model
 
