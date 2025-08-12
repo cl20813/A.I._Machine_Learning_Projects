@@ -1,15 +1,11 @@
-## Spatio-Temporal Modeling of Ozone Data Using a Deep Learning Framework (CNN-LSTM) (Ongoing proejct, updated January 2025)
+## Gaussian Process Spatio-Temporal Modeling of Ozone Data Ongoing proejct, updated January 2025)
 #### Research Proposal and Exploratory Data Analysis
 -[Research Proposal](https://github.com/cl20813/GEMS_TCO/blob/main/GEMS_TCO_EDA/Spatio_temporal_modeling.pdf): The main goal of the project is to develop tools that can help in modeling the spatio-temporal Ozone process.
+-[Yearly scale EDA](https://github.com/cl20813/GEMS_TCO/blob/main/GEMS_TCO_EDA/will_use/yearly_eda.ipynb): Presented time series of means, variances and semivariograms per hour from January 2023 to December 2024. The plots show not only ```short-term cycles``` but also ```long-term cycles```.
 
--[Yearly scale EDA](https://github.com/cl20813/GEMS_TCO/blob/main/GEMS_TCO_EDA/yearly_eda.ipynb): Presented time series of means, variances and semivariograms per hour from January 2023 to December 2024. The plots show not only ```short-term cycles``` but also ```long-term cycles```.
+-[Monthly scale EDA ](https://github.com/cl20813/GEMS_TCO/blob/main/GEMS_TCO_EDA/will_use/monthly_eda.ipynb): We present time series of semivariograms, and variances. It shows that the process is ```anisotropic``` and this needs to be reflected in the modeling.
 
--[Monthly scale EDA ](https://github.com/cl20813/GEMS_TCO/blob/main/GEMS_TCO_EDA/monthly_eda.ipynb): We present time series of semivariograms, and variances. It shows that the process is ```anisotropic``` and this needs to be reflected in the modeling.
-
--[Hourly scale EDA ](https://github.com/cl20813/GEMS_TCO/blob/main/GEMS_TCO_EDA/hourly_eda.ipynb): We explored data on an hourly scale. ```The cyclic pattern``` shown in the ```semivariograms``` indicates that we should fit the data with a model that can explain this cyclic pattern. Secondly, ```asymmetric cross-variograms``` on some days imply that there is ```space and time interaction```, hence we should consider a non-separable model. Lastly, ```latitude-sliced``` data shows ```spatial non-stationarity```. I plan to ```detrend for 5x10 spatial points``` in the N5N10 E110E120 region. 
-#### Models
-
--[CNN integrated with LSTM](https://github.com/cl20813/GEMS_TCO/blob/main/models/fit_deep_learning.ipynb): Still working on it. It seems CNN does not capture high resolution spatial information. Maybe I should replace it with Gaussian Process followed by LSTM. 
+-[Hourly scale EDA ](https://github.com/cl20813/GEMS_TCO/blob/main/GEMS_TCO_EDA/will_use/hourly_eda.ipynb): We explored data on an hourly scale. ```The cyclic pattern``` shown in the ```semivariograms``` indicates that we should fit the data with a model that can explain this cyclic pattern. Secondly, ```asymmetric cross-variograms``` on some days imply that there is ```space and time interaction```, hence we should consider a non-separable model. Lastly, ```latitude-sliced``` data shows ```spatial non-stationarity```. I plan to ```detrend for 5x10 spatial points``` in the N5N10 E110E120 region. 
 
 ## Exercise : Travelers Insurance Conversion Modeling (Updated Dec.2024)
 The goal of the project is to predict the probability that a prospect consumer will choose Travelers as their insurer.
@@ -36,7 +32,6 @@ Reference:
 -[Stock price prediction](American_airline/lstm.ipynb): Still working on it. I plan to apply ```lstm``` model.    
 
             
-
 ## Exercise : Spotify genre classification using random forest.
   1. Remove duplicated rows, columns with high-entropy features.
   2. Missing values: use mean for continous and mode for categorical features.
@@ -44,9 +39,7 @@ Reference:
   4. Remove extreme values or outliers.
   5. Split data into train and test.
   6. Random forest, lowest auc score is 0.92 for 5 labels in genre.
-
  -[Note Link](cl20813_SPOTIFY_GENRE.ipynb)
-
 
 ## Exercise . NLP with Python: Spam detection.
 
