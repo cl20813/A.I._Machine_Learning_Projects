@@ -32,7 +32,7 @@ Last AUC score for probability prediction is 0.8015 and recall for convertors (c
 Tabnet showed good AUC score but it performed very poorly on predicting actual labels. Another observation is that, CNN is good for spatial, sequential data and not a good tool for analyzing tabular, well structured data.
 
 1. Perform base modeling to compare basic models: CNN, LightGBM, and linear models.
-2. Conduct feature engineering. -**[Feature Engineering*](trav/data_engineering_lightgbm.ipynb)**    # Target Encoding, Missing Imputation, Truncating numerical outliers. 
+2. Conduct feature engineering. -**[Feature Engineering](trav/data_engineering_lightgbm.ipynb)**    # Target Encoding, Missing Imputation, Truncating numerical outliers. 
 3. Optimize hyperparameters using Rutgers HPC computing resources to avoid overfitting.              # max_depth, max number of leaves in a tree, max number of data in a leaf, learning rate, feature fraction, etc.
 4. Refine feature engineering.  
 5. Re-tune the hyperparameters.
