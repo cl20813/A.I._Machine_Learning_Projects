@@ -1,8 +1,26 @@
 ## IMC Algorithmic Trading Team Competition: Prosperity 3 - Top 2.39% Placement (Solo Player, April 2025)   
--[Background and Summary](imc/readme.md)     
-Trading Strategy: There are 5 Rounds but I mainly focused on the product that I am more comfortable with, and focused on utilizing better market making strategy. Then I utilized black sholes model and implied volatility
+-[Background and Summary](imc/readme.md)         
+Trading Strategy: There are 5 Rounds but I mainly focused on the product that I am more comfortable with, and focused on utilizing better market making strategy. Then I utilized black sholes model and implied volatility 
 -[My Market Making Strategy](imc/readme.md)
 -[Black Scholes Model and Implied Volatility](imc/readme.md)
+
+# IMC Algorithmic Trading Team Competition: Prosperity 3
+
+---
+
+## Top 2.39% Placement as a Solo Player (April 2025)
+
+---
+
+- **[Project Overview](imc/readme.md)**
+  - Secured a top 2.39% finish in the IMC Algorithmic Trading competition.
+  - Developed a focused strategy on a single product over five rounds.
+  - Leveraged advanced market-making techniques and financial models.
+
+- **[Trading Strategy](imc/readme.md)**
+  - My core strategy was built on an optimized **market-making** algorithm.
+  - I used the **Black-Scholes model** and **implied volatility** to inform my decisions.
+
 
 ## Gaussian Process Spatio-Temporal Modeling of Ozone Data Ongoing proejct, updated January 2025)
 #### Research Proposal and Exploratory Data Analysis
