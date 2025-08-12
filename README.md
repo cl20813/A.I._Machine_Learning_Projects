@@ -2,8 +2,6 @@
 -[Background](imc/readme.md)         
 
    
-    
-
 ## Gaussian Process Spatio-Temporal Modeling of Ozone Data Ongoing proejct, updated January 2025)
 #### Research Proposal and Exploratory Data Analysis
 -[Research Proposal](https://github.com/cl20813/GEMS_TCO/blob/main/GEMS_TCO_EDA/Spatio_temporal_modeling.pdf): The main goal of the project is to develop tools that can help in modeling the spatio-temporal Ozone process.      
@@ -38,23 +36,5 @@ Reference:
 -[Stock price prediction](American_airline/lstm.ipynb): Still working on it. I plan to apply ```lstm``` model.    
 
             
-## Exercise : Spotify genre classification using random forest (2024).
-  1. Remove duplicated rows, columns with high-entropy features.
-  2. Missing values: use mean for continous and mode for categorical features.
-  3. Box cox (postive data only) or yeojohnson transformation to make features more normal.
-  4. Remove extreme values or outliers.
-  5. Split data into train and test.
-  6. Random forest, lowest auc score is 0.92 for 5 labels in genre.
- -[Note Link](cl20813_SPOTIFY_GENRE.ipynb)
 
-## Exercise . NLP with Python: Spam detection (2024).
-
-  1. Read a text-based dataset into pandas: If I have a raw data, I would have to remove redundant columns other than 'label', and 'message'.
-  2. Text pre processing: 1) Remove common words, ('the','a', etc...) by using NLTK library. 2) Remove punctuation (!@#$%).
-  3. Use Countervectorizer to convert text into a matrix of token counts.
-  4. Exploratory Data Analysis(EDA): Spam messages tend to have lesser characters.
-  5. Multinomial Naive Bayes Classifer is suitable for classification with discrete features(word counts), note that it requires **integer** feature counts.
-  6. We can examine type 1 error and type 2 error and AUC score.
-
- -[Note Link](NLP_exercise_scam_detector/NLP_exercise_scam_detector.ipynb)
 
