@@ -11,10 +11,7 @@ pip install -e .
 
 ## 🪨 Round 1 and 2: MARKET MAKING STRATEGY
 
-07/02 Make a link for market making strategy and black sholes model, implied volatility, and then upload screenshot of my rank.
-Then explain market making strategy in this page.
-
-Conclusion, market making strategy worked better maybe because BS model assumes constant volatility. 
+This market-making strategy aims to profit from the bid-ask spread by placing orders around a derived true value. It prioritizes managing its current inventory by widening its spread when it holds a significant position. The strategy also includes a mechanism for aggressively reducing its position (soft or hard liquidation) if it repeatedly hits its trading limit, which is a key component for managing risk and avoiding being stuck with a large, unwanted inventory.
    
 ## 🪨 Round 3: Black-Scholes Model, and Implied Volatility.
 
