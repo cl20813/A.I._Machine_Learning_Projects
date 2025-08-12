@@ -10,9 +10,12 @@
   - Secured a top 2.39% finish in the IMC Algorithmic Trading competition.
   - Leveraged advanced market-making techniques and financial models.
 
-- **[Trading Strategy](imc/readme.md)**
-  - My core strategy was built on an optimized **market-making** algorithm.
-  - I used the **Black-Scholes model** and **implied volatility** to inform my decisions.
+- **[Trading Strategy Module](imc/trading_strategy.py)**
+  - My core strategy was built on an optimized **market-making** algorithm.     
+    
+This strategy is a market maker that places buy and sell orders around a calculated "true value" of an asset. It dynamically adjusts its bids and asks to manage its inventory and aggressively liquidates positions when it hits a specified trading limit.    
+      
+  - I used the **Black-Scholes model** and **implied volatility** to inform my decisions.     
 
 # Gaussian Process Spatio-Temporal Modeling of Ozone Data Ongoing proejct, updated January 2025)
 ### Research Proposal and Exploratory Data Analysis
