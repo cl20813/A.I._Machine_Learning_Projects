@@ -6,11 +6,11 @@
 
 ---
 
-- **[Project Overview](imc/readme.md)**
+- **[Project Overview and Background](imc/readme.md)**
   - Secured a top 2.39% finish in the IMC Algorithmic Trading competition.
   - Leveraged advanced market-making techniques and financial models.
 
-- **[Trading Strategy Module](imc/trading_strategy.py)**
+- **[Trading Strategy Python Module](imc/trading_strategy.py)**
   - My core strategy was built on an optimized **market-making** algorithm.     
     
 This strategy is a market maker that places buy and sell orders around a calculated "true value" of an asset. It dynamically adjusts its bids and asks to manage its inventory and aggressively liquidates positions when it hits a specified trading limit.    
