@@ -1,6 +1,6 @@
 ## Gaussian Process Spatio-Temporal Modeling of Ozone Data Ongoing proejct, updated January 2025)
 #### Research Proposal and Exploratory Data Analysis
--[Research Proposal](https://github.com/cl20813/GEMS_TCO/blob/main/GEMS_TCO_EDA/Spatio_temporal_modeling.pdf): The main goal of the project is to develop tools that can help in modeling the spatio-temporal Ozone process.
+-[Research Proposal](https://github.com/cl20813/GEMS_TCO/blob/main/GEMS_TCO_EDA/Spatio_temporal_modeling.pdf): The main goal of the project is to develop tools that can help in modeling the spatio-temporal Ozone process.      
 -[Yearly scale EDA](https://github.com/cl20813/GEMS_TCO/blob/main/GEMS_TCO_EDA/will_use/yearly_eda.ipynb): Presented time series of means, variances and semivariograms per hour from January 2023 to December 2024. The plots show not only ```short-term cycles``` but also ```long-term cycles```.
 
 -[Monthly scale EDA ](https://github.com/cl20813/GEMS_TCO/blob/main/GEMS_TCO_EDA/will_use/monthly_eda.ipynb): We present time series of semivariograms, and variances. It shows that the process is ```anisotropic``` and this needs to be reflected in the modeling.
