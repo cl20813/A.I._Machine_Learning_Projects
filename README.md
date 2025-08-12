@@ -23,10 +23,10 @@ Tabnet showed good AUC score but it performed very poorly on predicting actual l
 The final modeling result is shwon below.                  
 -[Final model: LightGBM jupyter notebook*](trav/travelers_lightgbm.ipynb)                             
               
-Reference: 
--[LightGBM hyper parameter optimization through Rutgers HPC](trav/amarel/lightgbm_param_opt.txt)                 
--[Neural Network (CNN) and Tabnet](trav/trav_neural_network.ipynb)                                  
--[Deep Learning nn model hyper parameter optimization through Rutgers HPC](trav/amarel/nn_param_opt)                            
+Reference:         
+-[LightGBM hyper parameter optimization through Rutgers HPC](trav/amarel/lightgbm_param_opt.txt)                    
+-[Neural Network (CNN) and Tabnet](trav/trav_neural_network.ipynb)                                      
+-[Deep Learning nn model hyper parameter optimization through Rutgers HPC](trav/amarel/nn_param_opt)                                
 
 ## Exercise: American Airline stock price prediction (Dec,2024):           
 -[Stock price prediction](American_airline/lstm.ipynb): Still working on it. I plan to apply ```lstm``` model.    
