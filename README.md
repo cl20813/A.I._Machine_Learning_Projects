@@ -7,7 +7,7 @@
 
 -[Hourly scale EDA ](https://github.com/cl20813/GEMS_TCO/blob/main/GEMS_TCO_EDA/will_use/hourly_eda.ipynb): We explored data on an hourly scale. ```The cyclic pattern``` shown in the ```semivariograms``` indicates that we should fit the data with a model that can explain this cyclic pattern. Secondly, ```asymmetric cross-variograms``` on some days imply that there is ```space and time interaction```, hence we should consider a non-separable model. Lastly, ```latitude-sliced``` data shows ```spatial non-stationarity```. I plan to ```detrend for 5x10 spatial points``` in the N5N10 E110E120 region. 
 
-## Exercise : Travelers Insurance Conversion Modeling (Updated Dec.2024)
+## Exercise : Travelers Insurance Conversion Modeling using LightGBM (Updated Dec.2024)
 The goal of the project is to predict the probability that a prospect consumer will choose Travelers as their insurer.
 
 Last AUC score for probability prediction is 0.8015 and recall for convertors (class 1) was 0.77 using the LightGBM.(12-28-2024). 
@@ -15,8 +15,8 @@ Last AUC score for probability prediction is 0.8015 and recall for convertors (c
 Tabnet showed good AUC score but it performed very poorly on predicting actual labels. Another observation is that, CNN is good for spatial, sequential data and not a good tool for analyzing tabular, well structured data.
 
 1. Perform base modeling to compare basic models: CNN, LightGBM, and linear models.
-2. Conduct feature engineering. -[Feature Engineering*](trav/data_engineering_lightgbm.ipynb)  
-3. Optimize hyperparameters using Rutgers HPC computing resources.   
+2. Conduct feature engineering. -[Feature Engineering*](trav/data_engineering_lightgbm.ipynb)  # Target Encoding, Missing Imputation, Truncating numerical outliers. 
+3. Optimize hyperparameters using Rutgers HPC computing resources to avoid overfitting.        # max_depth, max number of leaves in a tree, max number of data in a leaf, learning rate, feature fraction, etc.
 4. Refine feature engineering.  
 5. Re-tune the hyperparameters.
 
