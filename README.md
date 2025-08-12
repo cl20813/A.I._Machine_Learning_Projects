@@ -1,5 +1,5 @@
 ## IMC Algorithmic Trading Competition: Prosperity 3, TOP 2.39% PLACEMENT (April 2025)    
--[Background](imc/readme.md)         
+-[Background and Summary](imc/readme.md)         
 
    
 ## Gaussian Process Spatio-Temporal Modeling of Ozone Data Ongoing proejct, updated January 2025)
