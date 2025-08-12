@@ -1,3 +1,9 @@
+## IMC Algorithmic Trading Competition: Prosperity 3, TOP 2.39% PLACEMENT (April 2025)    
+-[Background](imc/readme.md)         
+
+   
+    
+
 ## Gaussian Process Spatio-Temporal Modeling of Ozone Data Ongoing proejct, updated January 2025)
 #### Research Proposal and Exploratory Data Analysis
 -[Research Proposal](https://github.com/cl20813/GEMS_TCO/blob/main/GEMS_TCO_EDA/Spatio_temporal_modeling.pdf): The main goal of the project is to develop tools that can help in modeling the spatio-temporal Ozone process.      
