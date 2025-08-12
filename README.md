@@ -1,4 +1,4 @@
-## IMC Algorithmic Trading Team Competition: Prosperity 3, TOP 2.39% PLACEMENT as Solo Player (April 2025)    
+## IMC Algorithmic Trading Team Competition: Prosperity 3 - Top 2.39% Placement (Solo Player, April 2025)   
 -[Background and Summary](imc/readme.md)         
 
    
