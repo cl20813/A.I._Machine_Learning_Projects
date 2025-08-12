@@ -28,11 +28,11 @@ Reference:
 -[Neural Network (CNN) and Tabnet](trav/trav_neural_network.ipynb)                                  
 -[Deep Learning nn model hyper parameter optimization through Rutgers HPC](trav/amarel/nn_param_opt)                            
 
-## Exercise: American Airline stock price prediction (Ongoing Dec,2024):           
+## Exercise: American Airline stock price prediction (Dec,2024):           
 -[Stock price prediction](American_airline/lstm.ipynb): Still working on it. I plan to apply ```lstm``` model.    
 
             
-## Exercise : Spotify genre classification using random forest.
+## Exercise : Spotify genre classification using random forest (2024).
   1. Remove duplicated rows, columns with high-entropy features.
   2. Missing values: use mean for continous and mode for categorical features.
   3. Box cox (postive data only) or yeojohnson transformation to make features more normal.
@@ -41,7 +41,7 @@ Reference:
   6. Random forest, lowest auc score is 0.92 for 5 labels in genre.
  -[Note Link](cl20813_SPOTIFY_GENRE.ipynb)
 
-## Exercise . NLP with Python: Spam detection.
+## Exercise . NLP with Python: Spam detection (2024).
 
   1. Read a text-based dataset into pandas: If I have a raw data, I would have to remove redundant columns other than 'label', and 'message'.
   2. Text pre processing: 1) Remove common words, ('the','a', etc...) by using NLTK library. 2) Remove punctuation (!@#$%).
